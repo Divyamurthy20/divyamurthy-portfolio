@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divya Sree Murthy | AI/ML Engineer Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Divya Sree Murthy, an AI/ML Engineer building production-ready systems in computer vision, NLP, RAG, and generative AI."
+    />
+    <meta
+      name="keywords"
+      content="Divya Sree Murthy, AI/ML Engineer, Computer Vision, NLP, RAG, Generative AI, FastAPI, PyTorch, TensorFlow"
+    />
+    <meta name="author" content="Divya Sree Murthy" />
+    <meta property="og:title" content="Divya Sree Murthy | AI/ML Engineer" />
+    <meta
+      property="og:description"
+      content="AI/ML Engineer building intelligent systems for real-world automation and decision making."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-bg.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-bg"></div>
+    <div class="top-progress" aria-hidden="true">
+      <span id="scroll-progress"></span>
+    </div>
+
+    <svg class="icon-defs" aria-hidden="true" focusable="false">
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38 1.56 1.56 0 0 1 6.94 8.5ZM5.6 9.75H8.3V18.4H5.6ZM10.05 9.75H12.64V10.93H12.68C13.04 10.25 13.92 9.54 15.24 9.54C18 9.54 18.5 11.28 18.5 13.55V18.4H15.8V14.1C15.8 13.08 15.78 11.77 14.38 11.77C12.96 11.77 12.74 12.86 12.74 14.02V18.4H10.05Z"
+        />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12 2C6.47 2 2 6.58 2 12.23C2 16.75 4.87 20.58 8.84 21.93C9.34 22.03 9.53 21.71 9.53 21.44V19.72C6.73 20.35 6.14 18.48 6.14 18.48C5.68 17.28 5 16.97 5 16.97C4.07 16.31 5.08 16.32 5.08 16.32C6.11 16.39 6.65 17.41 6.65 17.41C7.56 19.01 9.03 18.55 9.62 18.28C9.71 17.61 9.98 17.15 10.28 16.89C8.05 16.63 5.71 15.73 5.71 11.7C5.71 10.55 6.11 9.62 6.77 8.89C6.66 8.63 6.31 7.56 6.87 6.1C6.87 6.1 7.72 5.82 9.51 7.06C10.31 6.83 11.16 6.72 12 6.72C12.84 6.72 13.69 6.83 14.49 7.06C16.28 5.82 17.13 6.1 17.13 6.1C17.69 7.56 17.34 8.63 17.23 8.89C17.89 9.62 18.29 10.55 18.29 11.7C18.29 15.74 15.94 16.62 13.71 16.89C14.08 17.21 14.41 17.84 14.41 18.8V21.44C14.41 21.72 14.59 22.04 15.11 21.93C19.08 20.58 22 16.75 22 12.23C22 6.58 17.52 2 12 2Z"
+        />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M4 5.5H20A1.5 1.5 0 0 1 21.5 7V17A1.5 1.5 0 0 1 20 18.5H4A1.5 1.5 0 0 1 2.5 17V7A1.5 1.5 0 0 1 4 5.5ZM4 7V7.2L12 12.85L20 7.2V7ZM20 17V9.05L12.43 14.39A.75.75 0 0 1 11.57 14.39L4 9.05V17Z"
+        />
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M4 7H20V9H4ZM4 11H20V13H4ZM4 15H20V17H4Z" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19L5 17.6L10.6 12L5 6.4Z" />
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M11 4H13V12.17L15.59 9.59L17 11L12 16L7 11L8.41 9.59L11 12.17ZM5 18H19V20H5Z" />
+      </symbol>
+      <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M11 4H13V15.17L17.59 10.59L19 12L12 19L5 12L6.41 10.59L11 15.17Z" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <nav class="section-container header-row" aria-label="Primary">
+        <a href="#home" class="brand">
+          <span class="gradient-text">Divya</span>
+          <span class="brand-rest">Murthy</span>
+        </a>
+
+        <div class="desktop-nav">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#certifications">Certifications</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="btn-primary header-cta" href="assets/resume.pdf" download>
+            <span>Resume</span>
+            <svg class="button-icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+          </a>
+        </div>
+
+        <button
+          class="mobile-menu-btn"
+          id="mobile-menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+          <svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+      </nav>
+
+      <div class="section-container mobile-nav" id="mobile-nav" aria-label="Mobile">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a class="mobile-resume-link" href="assets/resume.pdf" download>Download Resume</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero-section">
+        <div class="hero-backdrop" data-placeholder="Add your hero background image at assets/hero-bg.jpg">
+          <div class="hero-background" aria-hidden="true"></div>
+          <div class="hero-grid-pattern" aria-hidden="true"></div>
+          <div class="hero-radial-overlay" aria-hidden="true"></div>
+          <div class="hero-aurora hero-aurora-one" aria-hidden="true"></div>
+          <div class="hero-aurora hero-aurora-two" aria-hidden="true"></div>
+          <img
+            src="assets/hero-bg.jpg"
+            alt="Hero background"
+            class="hero-background-image"
+          />
+        </div>
+
+        <div class="section-container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="hero-intro">Hi, I am</p>
+            <h1 class="hero-name">
+              Divya <span class="gradient-text">Sree Murthy</span>
+            </h1>
+
+            <div class="typed-role-line" aria-live="polite">
+              <span class="typed-role-text" id="typed-role"></span>
+              <span class="typed-role-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-description">
+              Based in Bengaluru, India.
+              <br /><br />
+              I build intelligent AI products across computer vision, NLP, RAG,
+              and generative AI. My focus is on clean design, automation, and
+              scalable systems that reduce manual effort and move smoothly from
+              model development to deployment.
+            </p>
+
+            <div class="hero-socials">
+              <a
+                class="social-icon"
+                href="https://github.com/Divyamurthy20"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <svg aria-hidden="true"><use href="#icon-github"></use></svg>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.linkedin.com/in/divya-sree-murthy-7a115524a"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+              </a>
+              <a
+                class="social-icon"
+                href="mailto:divyasree202003@gmail.com"
+                aria-label="Email"
+              >
+                <svg aria-hidden="true"><use href="#icon-mail"></use></svg>
+              </a>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn-primary" href="#projects">
+                <span>View Projects</span>
+                <svg class="button-icon button-icon-rotated" aria-hidden="true"><use href="#icon-arrow-down"></use></svg>
+              </a>
+              <a class="btn-secondary" href="assets/resume.pdf" download>
+                <span>Resume</span>
+                <svg class="button-icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-image-shell">
+              <div class="hero-image-backdrop" aria-hidden="true"></div>
+              <div class="hero-image-card">
+                <div class="hero-image-frame" data-placeholder="Add your profile image at assets/profile.jpg">
+                  <img
+                    src="assets/profile.jpg"
+                    alt="Divya Sree Murthy"
+                    class="hero-profile-image"
+                  />
+                  <div class="hero-image-overlay" aria-hidden="true"></div>
+                </div>
+              </div>
+              <div class="work-badge glass-card">
+                <span class="work-badge-dot"></span>
+                <span>Open to Work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-indicator" href="#about" aria-label="Scroll to About section">
+          <svg class="scroll-indicator-icon" aria-hidden="true"><use href="#icon-arrow-down"></use></svg>
+        </a>
+      </section>
+
+      <section class="impact-section">
+        <div class="section-container impact-grid">
+          <article class="glass-card impact-card reveal">
+            <h3>80%</h3>
+            <p>Manual workload reduced through AI automation systems.</p>
+          </article>
+          <article class="glass-card impact-card reveal">
+            <h3>1000+</h3>
+            <p>Offer letters and certificates generated every month.</p>
+          </article>
+          <article class="glass-card impact-card reveal">
+            <h3>12K+</h3>
+            <p>Text segments embedded for semantic retrieval workflows.</p>
+          </article>
+          <article class="glass-card impact-card reveal">
+            <h3>5+</h3>
+            <p>Interns mentored across AI, ML, DL, and RAG topics.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>About <span class="gradient-text">Me</span></h2>
+            <p>
+              I enjoy building AI systems that solve practical problems and hold
+              up in real operating environments, not just notebooks.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="glass-card about-card reveal">
+              <h3>What I work on</h3>
+              <p>
+                My work spans model development, backend APIs, deployment
+                workflows, and product-facing AI systems. Recent projects
+                include interview intelligence, retrieval-augmented search,
+                document automation, emotion analysis, and vision-driven
+                generative pipelines.
+              </p>
+            </article>
+
+            <article class="glass-card about-card reveal">
+              <h3>What I optimize for</h3>
+              <p>
+                I care about measurable impact, scalable architecture, and clean
+                implementation. The strongest outcomes in my work come from
+                pairing practical ML with strong workflow design.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="content-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>Technical <span class="gradient-text">Skills</span></h2>
+            <p>
+              Tools and frameworks I use across machine learning, deployment,
+              vision, NLP, and generative AI workflows.
+            </p>
+          </div>
+
+          <div class="skills-layout">
+            <article class="glass-card skills-panel reveal">
+              <h3>Core Stack</h3>
+              <div class="badge-list">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Scikit-learn</span>
+                <span class="skill-badge">TensorFlow</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">OpenCV</span>
+                <span class="skill-badge">Transformers</span>
+                <span class="skill-badge">RAG</span>
+                <span class="skill-badge">FAISS</span>
+                <span class="skill-badge">FastAPI</span>
+                <span class="skill-badge">REST APIs</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">Git</span>
+              </div>
+            </article>
+
+            <div class="skills-columns">
+              <article class="glass-card skill-group reveal">
+                <h3>Machine Learning</h3>
+                <p>
+                  Supervised learning, feature engineering, model training,
+                  evaluation, and predictive workflows.
+                </p>
+              </article>
+
+              <article class="glass-card skill-group reveal">
+                <h3>Computer Vision</h3>
+                <p>
+                  CNNs, image and video processing, object detection, emotion
+                  analysis, and segmentation with SAM.
+                </p>
+              </article>
+
+              <article class="glass-card skill-group reveal">
+                <h3>NLP and LLMs</h3>
+                <p>
+                  Transformers, retrieval-augmented generation, embeddings, and
+                  multimodal text understanding.
+                </p>
+              </article>
+
+              <article class="glass-card skill-group reveal">
+                <h3>Deployment</h3>
+                <p>
+                  Real-time inference pipelines, FastAPI backends, Dockerized
+                  services, and production integration.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>Professional <span class="gradient-text">Experience</span></h2>
+            <p>
+              Experience focused on deploying practical AI systems, automation
+              pipelines, and applied machine learning workflows.
+            </p>
+          </div>
+
+          <div class="experience-stack">
+            <article class="glass-card experience-card reveal">
+              <div class="experience-meta">
+                <span>Dec 2025 - Present</span>
+                <p>Bengaluru, Onsite</p>
+              </div>
+              <div class="experience-copy">
+                <h3>AI/ML Developer</h3>
+                <h4>Reintenspark Technology Private Limited</h4>
+                <ul>
+                  <li>Designed and deployed AI-driven automation workflows that reduced manual processing effort by 80%, improving operational efficiency.</li>
+                  <li>Engineered an intelligent email processing pipeline, reducing daily processing time from 3 hours to under 30 minutes using rule-based and ML-driven filtering.</li>
+                  <li>Developed a multimodal interview analysis system combining computer vision and speech processing to extract behavioral and emotional insights.</li>
+                  <li>Mentored and guided 5+ interns on ML, deep learning, and RAG-based systems, improving team productivity and knowledge sharing.</li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article class="glass-card experience-card reveal">
+              <div class="experience-meta">
+                <span>Oct 2025 - Dec 2025</span>
+                <p>Bengaluru, Onsite</p>
+              </div>
+              <div class="experience-copy">
+                <h3>AI Engineer Intern</h3>
+                <h4>NKB Playtech Private Limited</h4>
+                <ul>
+                  <li>Developed computer vision pipelines using PyTorch and OpenCV for video-based analysis tasks.</li>
+                  <li>Applied preprocessing and feature engineering techniques to improve model accuracy and robustness.</li>
+                  <li>Collaborated on building scalable ML components for integration into production workflows.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="glass-card experience-card reveal">
+              <div class="experience-meta">
+                <span>May 2024 - Jul 2024</span>
+                <p>Remote</p>
+              </div>
+              <div class="experience-copy">
+                <h3>Artificial Intelligence and Machine Learning Intern</h3>
+                <h4>EXCELR (AICTE Approved)</h4>
+                <ul>
+                  <li>Built a CNN-based facial emotion recognition system using the FER-2013 dataset.</li>
+                  <li>Improved generalization with augmentation, batch normalization, and dropout.</li>
+                  <li>Evaluated model performance using accuracy metrics and confusion matrix analysis.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>Featured <span class="gradient-text">Projects</span></h2>
+            <p>
+              A selection of AI systems built around multimodal reasoning,
+              retrieval, predictive analytics, and synthetic media generation.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+
+            <article class="glass-card project-card reveal">
+              <div class="project-image-wrap" data-placeholder="Add image at assets/projects/candidate-analysis.jpg">
+                <img
+                  src="assets/projects/candidate-analysis.jpg"
+                  alt="AI-Based Candidate Analysis System"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-copy">
+                <h3>AI-Based Candidate Analysis System</h3>
+                <p>
+                  Multimodal interview evaluation system combining computer
+                  vision and NLP to generate transcripts, emotion labels,
+                  behavioral insights, and recruiter-facing trust signals.
+                </p>
+                <div class="badge-list compact">
+                  <span class="skill-badge">python</span>
+                  <span class="skill-badge">Computer Vision</span>
+                  <span class="skill-badge">NLP</span>
+                  <span class="skill-badge">Speech-to-Text</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="glass-card project-card reveal">
+              <div class="project-image-wrap" data-placeholder="Add image at assets/projects/vectoriq-rag.jpg">
+                <img
+                  src="assets/projects/vectoriq-rag.jpg"
+                  alt="VectorIQ RAG"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>VectorIQ RAG</h3>
+                  <a href="https://github.com/Divyamurthy20/VectorIQ-RAG" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <p>
+                  RAG-based intelligent search system using FAISS embeddings and
+                  Mistral-7B for high-speed semantic retrieval across 12K+ text
+                  segments.
+                </p>
+                <div class="badge-list compact">
+                  <span class="skill-badge">python</span>
+                  <span class="skill-badge">RAG</span>
+                  <span class="skill-badge">FAISS</span>
+                  <span class="skill-badge">Mistral-7B</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="glass-card project-card reveal">
+              <div class="project-image-wrap" data-placeholder="Add image at assets/projects/heart-disease.jpg">
+                <img
+                  src="assets/projects/heart-disease.jpg"
+                  alt="Heart Disease Prediction System"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>Heart Disease Prediction System</h3>
+                  <a href="https://github.com/Divyamurthy20/Heart-Disease-Prediction-System" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <p>
+                  End-to-end predictive ML system trained on clinical datasets,
+                  supported by dashboards that reduced analysis time by 30%.
+                </p>
+                <div class="badge-list compact">
+                  <span class="skill-badge">python</span>
+                  <span class="skill-badge">SVM</span>
+                  <span class="skill-badge">Decision Trees</span>
+                  <span class="skill-badge">Logistic Regression</span>
+                  <span class="skill-badge">Random Forest</span>
+                  <span class="skill-badge">Scikit-learn</span>
+                  <span class="skill-badge">Visualization</span>
+                  <span class="skill-badge">EDA</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="glass-card project-card reveal">
+              <div class="project-image-wrap" data-placeholder="Add image at assets/projects/ai-casino.jpg">
+                <img
+                  src="assets/projects/ai-casino.jpg"
+                  alt="Automated Casino"
+                  class="project-image"
+                />
+              </div>
+              <div class="project-copy">
+                <h3>Automated Casino</h3>
+                <p>
+                  Vision and generative AI pipeline using SAM and Stable
+                  Diffusion to segment components, swap assets, and create 3x
+                  to 5x synthetic video variations.
+                </p>
+                <div class="badge-list compact">
+                   <span class="skill-badge">python</span>
+                  <span class="skill-badge">SAM</span>
+                  <span class="skill-badge">Stable Diffusion</span>
+                  <span class="skill-badge">OpenCV</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card glass-card reveal hidden-project">
+              <div class="project-image-wrap" data-placeholder="Emotion Recognition Preview">
+                <img src="assets/projects/emotion-recognition.jpg" alt="Emotion Recognition System" class="project-image" />
+              </div>
+              <div class="project-copy">
+                <div class="project-title-row">
+                  <h3>Emotion Recognition System</h3>
+                    <a href="https://github.com/Divyamurthy20/Emotion-Recognition-System-using-CNN" target="_blank">GitHub</a>
+                </div>
+
+                  <p>
+                    Deep learning-based facial emotion recognition system using CNN to classify human emotions in real-time.
+                    Integrated with computer vision techniques for live webcam-based detection and analysis.
+                  </p>
+
+                <div class="badge-list compact">
+                   <span class="skill-badge">python</span>
+                  <span class="skill-badge">CNN</span>
+                  <span class="skill-badge">Computer Vision</span>
+                  <span class="skill-badge">OpenCV</span>
+                  <span class="skill-badge">TensorFlow</span>
+                  <span class="skill-badge">Deep Learning</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card glass-card reveal hidden-project">
+  <div class="project-image-wrap" data-placeholder="Diabetes Prediction Preview">
+    <img src="assets/projects/diabetes-prediction.jpg" alt="Diabetes Prediction System" class="project-image" />
+  </div>
+
+  <div class="project-copy">
+    <div class="project-title-row">
+      <h3>Diabetes Prediction System</h3>
+      <a href="https://github.com/Divyamurthy20/Diabetes-Prediction-System-using-ML" target="_blank">GitHub</a>
+    </div>
+
+    <p>
+      Machine learning-based healthcare system for predicting diabetes risk using Support Vector Machine (SVM). Focused on data preprocessing, feature scaling, and improving prediction reliability for early diagnosis.
+    </p>
+
+    <div class="badge-list compact">
+      <span class="skill-badge">python</span>
+      <span class="skill-badge">Machine Learning</span>
+      <span class="skill-badge">SVM</span>
+      <span class="skill-badge">Scikit-learn</span>
+      <span class="skill-badge">Data Preprocessing</span>
+      <span class="skill-badge">Classification</span>
+    </div>
+  </div>
+</article>
+          </div>
+        </div>
+      </section>
+      <div class="view-more-container">
+  <button id="view-more-btn" class="btn-secondary">
+    View More Projects
+  </button>
+</div>
+
+
+
+      <section id="education" class="content-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>Education <span class="gradient-text">Background</span></h2>
+            <p>
+              Strong academic grounding in AI and machine learning, backed by
+              high-performing coursework and project execution.
+            </p>
+          </div>
+
+
+          <div class="education-grid">
+            <article class="glass-card education-card reveal">
+              <h3>B.Tech in CSE (Artificial Intelligence and Machine Learning)</h3>
+              <p>Sri Venkateswara College of Engineering, affiliated to JNTUA</p>
+              <span>2021 - 2025 | 80%</span>
+            </article>
+
+            <article class="glass-card education-card reveal">
+              <h3>Intermediate (MPC)</h3>
+              <p>Sri Chaitanya Junior College</p>
+              <span>2019 - 2021 | 94.5%</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="content-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>Professional <span class="gradient-text">Certifications</span></h2>
+            <p>
+              Certifications that support my work in AI, data science, Python,
+              and mathematical foundations for machine learning.
+            </p>
+          </div>
+
+          <div class="cert-grid">
+            <article class="glass-card cert-card reveal">
+              <h3>AWS Generative AI</h3>
+              <p>AWS Skill Builder</p>
+              <a href="https://drive.google.com/file/d/1hjdb9DAuAcZ2DbAvKoPCFTZJQOHOYiZW/view?usp=sharing" target="_blank" class="cert-btn">
+            view certificate</a>
+            </article>
+            <article class="glass-card cert-card reveal">
+              <h3>Data Science</h3>
+              <p>Internshala</p>
+              <a href="https://drive.google.com/file/d/19lM58Q-K32bPWJ6-IgrG3UPNXoVPEGAc/view?usp=sharing" target="_blank" class="cert-btn">
+            view certificate</a>
+            </article>
+            <article class="glass-card cert-card reveal">
+              <h3>Python Technology Stack</h3>
+              <p>Infosys Springboard</p>
+              <a href="https://drive.google.com/file/d/1S3CKYd8jIr4VWMRXOczw1c8pFUblwUtH/view?usp=sharing" target="_blank" class="cert-btn"
+                >View Certificate </a>
+            </article>
+            <article class="glass-card cert-card reveal">
+              <h3>Mathematics for Machine Learning</h3>
+              <p>NPTEL</p>
+              <a href="https://drive.google.com/file/d/1LfMvNL8rDsUodV7iRjwPxIXzmHaM4wt0/view?usp=sharing" target="_blank" class="cert-btn">
+    View Certificate </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section contact-section">
+        <div class="section-container">
+          <div class="section-heading reveal">
+            <h2>Let's <span class="gradient-text">Connect</span></h2>
+            <p>
+              Open to AI/ML engineering roles, applied AI product work, and
+              opportunities involving multimodal systems, retrieval, and
+              intelligent automation.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <a class="glass-card contact-card" href="mailto:divyasree202003@gmail.com">
+                <p class="contact-label">Email</p>
+                <h3>divyasree202003@gmail.com</h3>
+              </a>
+
+              <a class="glass-card contact-card" href="tel:+919121655684">
+                <p class="contact-label">Phone</p>
+                <h3>+91 9121655684</h3>
+              </a>
+
+              <div class="glass-card contact-card">
+                <p class="contact-label">Location</p>
+                <h3>Bengaluru, Karnataka</h3>
+              </div>
+            </div>
+
+            <form
+              class="glass-card contact-form reveal"
+              action="mailto:divyasree202003@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="your@email.com" />
+              </div>
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Subject" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity"></textarea>
+              </div>
+              <button class="btn-primary full-width" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-container footer-row">
+        <a href="#home" class="brand">
+          <span class="gradient-text">Divya</span>
+          <span class="brand-rest">Murthy</span>
+        </a>
+
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p class="footer-copy">AI/ML Engineer | <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
